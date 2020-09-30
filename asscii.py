@@ -1,7 +1,7 @@
 import PIL
 from PIL import Image
 # ascii characters used to build the output text
-ASCII_CHARS = ["@", "#", "S", "%", "?", "*", "+", ";", ":", ",", "."]
+ASCII_CHARS = ["@", "#", "S", "%", "?", "*", "+", ";", ":", ",", ".","-","&"]
 
 # resize image according to a new width
 def resize_image(image, new_width=100):
