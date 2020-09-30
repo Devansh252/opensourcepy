@@ -19,7 +19,7 @@ def grayify(image):
 # convert pixels to a string of ascii characters
 def pixels_to_ascii(image):
     pixels = image.getdata()
-    characters = "".join([ASCII_CHARS[pixel//25] for pixel in pixels])
+    characters = "".join([ASCII_CHARS[pixel//34] for pixel in pixels])
     return(characters)    
 
 def main(new_width=150):
