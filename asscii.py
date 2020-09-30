@@ -1,10 +1,10 @@
 import PIL
 from PIL import Image
 # ascii characters used to build the output text
-ASCII_CHARS = ["@", "#", "S", "%", "?", "*", "+", ";", ":", ",", ".","-","&"]
+ASCII_CHARS = ["@", "#", "S", "%", "?", "*", "+", ";", ":", ",", "."]
 
 # resize image according to a new width
-def resize_image(image, new_width=100):
+def resize_image(image, new_width=150):
     width, height = image.size
     ratio = height/width/1.65
     new_height = int(new_width * ratio)
@@ -22,7 +22,7 @@ def pixels_to_ascii(image):
     characters = "".join([ASCII_CHARS[pixel//25] for pixel in pixels])
     return(characters)    
 
-def main(new_width=100):
+def main(new_width=150):
     # attempt to open image from user-input
     path = input("Enter a valid pathname to an image:\n")
     try:
